@@ -1,77 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.alejo_zr.manual.DetalleDano">
 
-    <LinearLayout
+    <com.github.barteksc.pdfviewer.PDFView
+        android:id="@+id/pdfView"
+        android:layout_centerInParent="true"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="@dimen/separacion_tarjeta">
+        android:layout_height="match_parent"/>
 
-        <!--<ImageView
-            android:id="@+id/imgFoto"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:src="@drawable/grieta_esquina"
-            android:layout_gravity="center_horizontal"
-            />-->
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-
-            >
-
-            <TextView
-                android:id="@+id/tvDaño"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/grieta_esquina"
-                android:textSize="@dimen/nombre_cardview"
-                android:textStyle="bold"/>
-            <TextView
-                android:id="@+id/tvParentesisAbre"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="("
-                android:textSize="@dimen/nombre_cardview"
-                android:layout_marginLeft="@dimen/left"
-                android:layout_below="@id/tvDaño"
-                />
-            <TextView
-                android:id="@+id/tvdñ"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/g_e"
-                android:textSize="@dimen/nombre_cardview"
-                android:layout_below="@id/tvDaño"
-                android:layout_toRightOf="@id/tvParentesisAbre"
-                />
-            <TextView
-                android:id="@+id/tvParentesisCierra"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text=")"
-                android:textSize="@dimen/nombre_cardview"
-                android:layout_below="@id/tvDaño"
-                android:layout_toRightOf="@id/tvdñ"
-                />
-
-        </RelativeLayout>
-
-
-        <TextView
-            android:id="@+id/tvExplicacion"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Explicación del daño"/>
-
-
-    </LinearLayout>
-
-</ScrollView>
+</RelativeLayout>
 
