@@ -5,6 +5,7 @@
     <string name="p_flex">Pavimento Flexible</string>
     <string name="p_rigi">Pavimento Rígido</string>
     <string name="info">Información</string>
+    <string name="prueba">ESTOS ES UNA PRUEBA</string>
     <!--Daños Pavimento Rígido!-->
     <string name="grieta_esquina">Grieta de esquina</string>
     <string name="g_e">GE</string>
