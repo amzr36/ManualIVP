@@ -8,19 +8,39 @@ import com.github.barteksc.pdfviewer.PDFView;
 
 public class Daño {
 
+    private int tipoPav;
+    private int numero;
     private int foto;
     private String daño;
     private String dñ;
-    private int pdfView;
 
 
-    public Daño(int foto, String daño, String dñ, int pdfView){
 
+    public Daño(int tipoPav,int numero, int foto, String daño, String dñ){
+
+        this.tipoPav = tipoPav;
+        this.numero = numero;
         this.foto = foto;
         this.daño = daño;
         this.dñ   = dñ;
-        this.pdfView = pdfView;
 
+
+    }
+
+    public int getTipoPav() {
+        return tipoPav;
+    }
+
+    public void setTipoPav(int tipoPav) {
+        this.tipoPav = tipoPav;
+    }
+
+    public int getNumero() {
+        return numero;
+    }
+
+    public void setNumero(int numero) {
+        this.numero = numero;
     }
 
     public int getFoto() {
@@ -47,11 +67,5 @@ public class Daño {
         this.dñ = dñ;
     }
 
-    public int getPdfView() {
-        return pdfView;
-    }
 
-    public void setPdfView(int pdfView) {
-        this.pdfView = pdfView;
-    }
 }

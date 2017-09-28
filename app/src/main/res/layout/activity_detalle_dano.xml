@@ -6,11 +6,21 @@
     android:layout_height="match_parent"
     tools:context="com.alejo_zr.manual.DetalleDano">
 
+    <TextView
+        android:id="@+id/tvDaño"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/grieta_esquina"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"/>
+
+
     <com.github.barteksc.pdfviewer.PDFView
         android:id="@+id/pdfView"
         android:layout_centerInParent="true"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent"
+        android:layout_below="@id/tvDaño"/>
 
 </RelativeLayout>
 

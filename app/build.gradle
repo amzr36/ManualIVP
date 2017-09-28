@@ -31,5 +31,6 @@ dependencies {
     compile 'com.android.support:design:26.+'
     testCompile 'junit:junit:4.12'
     compile 'com.github.barteksc:android-pdf-viewer:2.4.0'
+    compile 'com.github.lguipeng:BubbleView:1.0.1'
 
 }

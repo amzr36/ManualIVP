@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"
+            android:screenOrientation="portrait"
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -17,11 +19,17 @@
             </intent-filter>
         </activity>
         <activity android:name=".PavimentoFlexible"
-            android:parentActivityName=".MainActivity"/>
+            android:screenOrientation="portrait"
+            android:parentActivityName=".MainActivity"
+            />
         <activity android:name=".PavimentoRigido"
-            android:parentActivityName=".MainActivity"/>
+            android:screenOrientation="portrait"
+            android:parentActivityName=".MainActivity"
+            />
         <activity android:name=".DetalleDano"
-            android:parentActivityName=".MainActivity"></activity>
+            android:screenOrientation="portrait"
+            android:parentActivityName=".MainActivity"
+            ></activity>
     </application>
 
 </manifest>

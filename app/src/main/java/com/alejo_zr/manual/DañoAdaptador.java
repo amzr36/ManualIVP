@@ -44,12 +44,15 @@ public class DañoAdaptador extends RecyclerView.Adapter<DañoAdaptador.DañoVie
         dañoViewHolder.tvDañoCV.setText(daño.getDaño());
         dañoViewHolder.tvdñCV.setText(daño.getDñ());
 
+
         dañoViewHolder.imgFotoCV.setOnClickListener(new View.OnClickListener(){
 
             @Override
             public void onClick(View view) {
                 Toast.makeText(activity, daño.getDaño(), Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(activity, DetalleDano.class);
+                intent.putExtra("tipoPav", daño.getTipoPav());
+                intent.putExtra("numero",daño.getNumero());
                 intent.putExtra("foto", daño.getFoto());
                 intent.putExtra("daño", daño.getDaño());
                 intent.putExtra("dñ", daño.getDñ());
@@ -68,6 +71,7 @@ public class DañoAdaptador extends RecyclerView.Adapter<DañoAdaptador.DañoVie
     public static class DañoViewHolder extends RecyclerView.ViewHolder {
 
         //Se crean los objetos
+
         private ImageView imgFotoCV;
         private TextView tvDañoCV;
         private TextView tvdñCV;
