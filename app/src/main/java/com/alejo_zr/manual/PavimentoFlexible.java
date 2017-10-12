@@ -1,17 +1,10 @@
 package com.alejo_zr.manual;
 
-import android.content.Context;
-import android.content.res.AssetFileDescriptor;
-import android.content.res.AssetManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
-import com.github.barteksc.pdfviewer.source.AssetSource;
-
-import java.io.IOException;
-import java.io.InputStream;
 import java.util.ArrayList;
 
 public class PavimentoFlexible extends AppCompatActivity {

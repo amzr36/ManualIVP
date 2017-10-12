@@ -1,7 +1,5 @@
 package com.alejo_zr.manual;
 
-import com.github.barteksc.pdfviewer.PDFView;
-
 /**
  * Created by Alejo on 12/08/2017.
  */

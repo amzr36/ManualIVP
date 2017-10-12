@@ -5,8 +5,6 @@ import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 
-import com.github.barteksc.pdfviewer.PDFView;
-
 import java.util.ArrayList;
 
 public class PavimentoRigido extends AppCompatActivity {
